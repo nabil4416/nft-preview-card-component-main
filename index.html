@@ -7,146 +7,59 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | NFT preview card component</title>
+  <link rel="stylesheet" href="style.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
-    body {
-      background-color: hsl(217, 54%, 11%);
-      margin: 0;
-      box-sizing: border-box;
-    }
-    .container {
-      background: hsl(216, 50%, 16%);
-      width: 375px;
-      margin: 100px auto;
-      border-radius: 15px;
-    }
-    .banner {
-      max-width: 330px;
-      padding: 20px 30px 5px;
-    }
-    .banner img {
-      width: 100%;
-      border-radius: 15px;
-    }
-    .content{
-      max-width: 325px;
-      text-align: left;
-      padding: 0 30px;
-      font-family: 'Outfit', sans-serif;
-    }
-    h2 {
-      color: hsl(0, 0%, 100%);
-    }
-    .content p {
-      color: hsl(215, 51%, 70%);
-      font-size: 18px;
-      margin: 0;
-    }
-    .infos-clock {
-      width: 325px;
-      display: flex;
-      justify-content: space-between;
-      padding: 0 30px;
-    }
-    .clock img {
-      padding-right: 5px;
-    }
-    .infos img {
-      padding-right: 5px;
-    }
-    .infos{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      color:hsl(178, 100%, 50%);
-      font-size: 18px;
-      font-family: 'Outfit', sans-serif;;
-    }
-    .clock{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      color:hsl(215, 51%, 70%);
-      font-size: 18px;
-      font-family: 'Outfit', sans-serif;;
-    }
-    .line{
-      width: 325px;
-      height: 1px;
-      background: hsl(215, 51%, 30%);
-      margin: 0 auto;
-    }
-    .avatar {
-      display: flex;
-      align-items: center;
-      color:hsl(215, 51%, 70%);
-      font-size: 18px;
-      font-family: 'Outfit', sans-serif;
-      padding: 10px 30px 40px;
-    }
-    .avatar-container {
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      border: 1px solid white;
-    }
-    .avatar img {
-    width: 30px;
-    border-radius: 50%;
-    }
-    .avatar p {
-      padding-left: 20px;
-    }
-    span {
-      color: hsl(0, 0%, 100%);
-    }
-  </style>
+  
 </head>
 <body>
   <!--container-->
-<div class="container" role="main">
+<main class="container">
+
     <!--banner-->
-  <div class="banner">
-    <img src="images/image-equilibrium.jpg" alt="equilibre">
-  </div>
+  <figure class="banner">
+    <img src="images/image-equilibrium.jpg" alt="equilibre" id="banner">
+    <!-- <img src="images/icon-view.svg" alt="eye view" id="eye-view"> -->
+  </figure>
+
     <!--content-->
-  <div class="content" role="content">
+  <section class="content" role="content">
     <h2>
       Equilibrium #3429
     </h2>
     <p>
       Our Equilibrium collection promotes balance and calm.
     </p>
-  </div>
+  </section>
+
   <!--infos & clock-->
-  <div class="infos-clock">
-    <div class="infos">
+  <section class="infos-clock">
+    <figure class="infos">
       <img src="images/icon-ethereum.svg" alt="eterium">
-      <p>
+      <figcaption>
         0.041 ETH
-      </p>
-    </div>
-    <div class="clock">
+      </figcaption>
+    </figure>
+    <figure class="clock">
       <img src="images/icon-clock.svg" alt="clock">
-      <p>
+      <figcaption>
         3 days left
-      </p>
-    </div>
-  </div>
+      </figcaption>
+    </figure>
+  </section>
+  
   <!--horisontal line-->
   <div class="line"></div>
+
   <!-- avatar-->
-  <div class="avatar" role="contentinfo">
-    <div class="avatar-container">
+  <footer class="avatar" role="contentinfo">
+    <figure class="avatar-container">
       <img src="images/image-avatar.png" alt="">
-    </div>
-    <p>
-      Creation of  <span> Jules Wyvern </span> 
-    </p>
-  </div>
+    </figure>
+    <figcaption>
+      Creation of  <a href="#" target="_blank"> Jules Wyvern</a>  
+    </figcaption>
+  </footer>
 <!--end-->
-</div>
+</main>
 </body>
 </html>
