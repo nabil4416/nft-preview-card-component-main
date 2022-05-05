@@ -8,58 +8,52 @@
   
   <title>Frontend Mentor | NFT preview card component</title>
   <link rel="stylesheet" href="style.css">
-
-  
+ 
 </head>
 <body>
-  <!--container-->
-<main class="container">
-
+  <main>
     <!--banner-->
-  <figure class="banner">
-    <img src="images/image-equilibrium.jpg" alt="equilibre" id="banner">
-    <!-- <img src="images/icon-view.svg" alt="eye view" id="eye-view"> -->
-  </figure>
+    <header>
+      <div class="banner">
+        <img src="images/image-equilibrium.jpg" alt="">
+      <div class="view">
+        <img src="images/icon-view.svg" alt="">
+      </div>
+     </div>
 
-    <!--content-->
-  <section class="content">
-    <h2>
-      Equilibrium #3429
-    </h2>
-    <p>
-      Our Equilibrium collection promotes balance and calm.
-    </p>
-  </section>
+    </header>
+    <!--first section-->
+    
+    <div class="first">
+      <h2>Equilibrium #3429</h2>
+      <p>Our Equilibrium collection promotes balance and calm.</p>
+    </div>
+    
+    <!--second section-->
+    <div class="second">
+      <div class="ethereum">
+        <img src="images/icon-ethereum.svg" alt="">
+        <p>0.041 ETH</p>
+      </div>
+      <div class="clock">
+        <img src="images/icon-clock.svg" alt="">
+        <p>3 days left</p>
+      </div>
+    </div>
 
-  <!--infos & clock-->
-  <section class="infos-clock">
-    <figure class="infos">
-      <img src="images/icon-ethereum.svg" alt="eterium">
-      <figcaption>
-        0.041 ETH
-      </figcaption>
-    </figure>
-    <figure class="clock">
-      <img src="images/icon-clock.svg" alt="clock">
-      <figcaption>
-        3 days left
-      </figcaption>
-    </figure>
-  </section>
-  
-  <!--horisontal line-->
-  <div class="line"></div>
+    <!--footer-->
+    <footer>
+      <div class="avatar">
+        <img src="images/image-avatar.png" alt="">
+        <p>Creation of <span><a href="#" target="_blank">Jules Wyvern</a></span></p>
+      </div>
+    </footer>
+  </main>
+    
 
-  <!-- avatar-->
-  <footer class="avatar">
-    <figure class="avatar-container">
-      <img src="images/image-avatar.png" alt="">
-    </figure>
-    <figcaption>
-      Creation of  <a href="#" target="_blank"> Jules Wyvern</a>  
-    </figcaption>
-  </footer>
-<!--end-->
-</main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.linkedin.com/in/nabil-khotbi" target="_blank">isaac nabil</a>.
+  </div>
 </body>
 </html>
